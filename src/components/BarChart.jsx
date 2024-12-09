@@ -1,3 +1,6 @@
+// Task 3 
+// Implement Specific Chart Components
+
 import React from 'react'
 import ChartComponent from './ChartComponent';
 
