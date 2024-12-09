@@ -1,9 +1,11 @@
 // Task 3 
 // Implement Specific Chart Components
 
+// Imports react and ChartComponent files
 import React from 'react'
 import ChartComponent from './ChartComponent';
 
+// Processes datasets regarding expense, profit, and sales data
 const BubbleChart = ({ data }) => {
     const bubbleChartData= {
         labels: data.expenses,
@@ -22,6 +24,7 @@ const BubbleChart = ({ data }) => {
         ]
     }
 
+    // Configures financial bubble chart axes
     const bubbleChartOptions = {
         scales: {
           x: {
@@ -39,4 +42,5 @@ const BubbleChart = ({ data }) => {
 
 }
 
+// Exports BubbleChart file for use in App file
 export default BubbleChart;

@@ -1,9 +1,11 @@
 // Task 3 
 // Implement Specific Chart Components
 
+// Imports react and ChartComponent files
 import React from 'react'
 import ChartComponent from './ChartComponent';
 
+// Processes datasets regarding expenses and profits data
 const ScatterChart = ({ data }) => {
     const scatterChartData = {
         labels: data.expenses,
@@ -18,7 +20,7 @@ const ScatterChart = ({ data }) => {
         ]
     }
 
-
+// Configures financial scatter chart axes
 const scatterChartOptions = {
     scales: {
         y: {
@@ -32,4 +34,5 @@ return <ChartComponent type="scatter" data={scatterChartData} options={scatterCh
 
 };
 
+// Exports ScatterChart file for use in App file
 export default ScatterChart;
