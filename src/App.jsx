@@ -18,6 +18,18 @@ const App = () => {
 
   }, []);
 
-}
 // Task 5 
 // Render Charts in the App
+
+return (
+  <div>
+    <h1>Dynamic Financial Data Chart Dashboard </h1>
+    <BarChart data={chartData} />
+    <LineChart data={chartData} />
+    <ScatterChart data={chartData} />
+    <BubbleChart data={chartData} />
+  </div>
+);
+};
+
+export default App;
